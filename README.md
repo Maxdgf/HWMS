@@ -8,6 +8,17 @@ Multifunctional home wifi weather station capable of reading temperature, humidi
 | :----------------- |
 | <img src="github/HWMS_SHEME.png"> |
 
+| Used components |
+| :-----------------|
+
+| Component | Description |
+| :--------- | :------------|
+| AHT10 | Temperature and Humidity Sensor |
+| BMP180 | Temperature, Humidity and Pressure Sensor |
+| Buzzer | Buzzer module |
+| RGB light | RGB light module |
+| ESP 8266 (ESP 01) | wifi  module |
+
 | HWMS project pinout on Arduino NANO|
 | :------------------- |
 

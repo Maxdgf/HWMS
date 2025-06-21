@@ -2,7 +2,8 @@
   ======================================================================
   |HWMS🌤️ ESP 8266 (ESP 01) firmware by https://github.com/Maxdgf      |
   ======================================================================
-  - Creates web server with html page.
+  - Creates web server with html page
+  -[Note!] -> ESP 8266 (ESP 01) works on specific wifi network! all network data must be specified accurately.
 */
 
 #include <string.h>

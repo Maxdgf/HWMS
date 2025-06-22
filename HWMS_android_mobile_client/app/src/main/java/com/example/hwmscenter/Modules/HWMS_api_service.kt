@@ -43,7 +43,7 @@ class HWMS_api_service {
         } catch (e: Exception) {
             //if fetching is not successful, returns warning message
             e.printStackTrace()
-            result = "Null data!\nCheck wifi connection."
+            result = "Null data!\nCheck wifi connection or HWMS device."
         }
 
         return result

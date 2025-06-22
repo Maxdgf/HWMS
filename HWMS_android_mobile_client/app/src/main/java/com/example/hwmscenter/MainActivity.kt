@@ -66,7 +66,7 @@ class MainActivity : ComponentActivity() {
 fun MainContent() {
     val hwms = HWMS_api_service()
 
-    var mainData by remember { mutableStateOf("Loading...\n(check wifi connection)") } //default text
+    var mainData by remember { mutableStateOf("Loading...\n(check wifi connection or HWMS device.)") } //default text
     var currentIpData by remember { mutableStateOf("current ip: ?") } //default text
 
     val dataScope = rememberCoroutineScope()

@@ -10,33 +10,22 @@ from tkinter import*
 import threading
 import time
 
+from Modules.constants import*
 from Modules.HWMS_api import*
 import Modules.HWMS_api as hwms
-
-NAME = "HWMS🌤️"
-MAIN_COLOR = "#0aabf0"
-REFRESH_DELAY = 1 #data updating delay
 
 root = Tk()
 root.title(NAME)
 root.geometry("900x500")
 root.configure(bg=MAIN_COLOR)
 
-#thread of get device ip data
-def get_device_ip():
-    def easy_task():
-        current_ip = hwms.get_current_ip()
-        root.after(0, update_data_label, current_ip, current_ip_label)
-        time.sleep(1)
-
-    thread = threading.Thread(target=easy_task, daemon=True)
-    thread.start()
-
 #thread of get main data (weather data)
 def get_data_from_server():
     def main_task():
         while True:
             weather_data = hwms.get_weather_data()
+            current_ip = hwms.get_current_ip()
+            root.after(0, update_data_label, current_ip, current_ip_label)
             root.after(0, update_data_label, weather_data, main_data_label)
             time.sleep(REFRESH_DELAY)
 
@@ -58,7 +47,6 @@ current_ip_label = Label(root, text="Loading ip...", font=("Segoe UI, Tahoma, Ge
 current_ip_label.pack(side="bottom", pady=10)
 
 #launch data threads functions
-get_device_ip()
 get_data_from_server()
 
 root.mainloop()

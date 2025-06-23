@@ -32,3 +32,5 @@ Multifunctional home wifi weather station capable of reading temperature, humidi
 | RGB light | GND -> GND; R -> D4; G -> D5; B -> D6 |
 | ESP 8266 (ESP 01) | GND -> GND; TX -> RX0 (RX); GPIO2 -> None; CH_PD - 3.3V; GPIO0 -> None; RST -> None; VCC -> 3.3V; RX -> TX1 (TX) |
 | HC-SR04 | GND -> GND; VCC -> 5V; Echo -> 12; Trig -> 11 |
+
+## Work

@@ -1,6 +1,6 @@
 | HWMS project sheme |
 | :----------------- |
-| <img src="github/HWMS_SHEME.png"> |
+| <img src="HWMS/github/HWMS_SHEME.png"> |
 
 | Used components |
 | :-----------------|
